@@ -1,10 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./fonts/fonts.css" >
+    <link rel="stylesheet" href="./styles/global.css" >
+    <link rel="stylesheet" href="./styles/style.css" >
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
-  <body></body>
+  <body>
+    <!-- pixel-perfect -->
+  <img src="./ONO-TEBE_NADO.png" alt="   " class="pixel-perfect-image">
+    <!-- /pixel-perfect -->
+    <header class="header" id="header_id">
+      <nav>
+        <ul class="header__navigation-list">
+          <li class="navigation-item_current">
+            <a class="navigation-link"
+             href="#">
+              главная
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#lots_id">
+              посмотреть лоты
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link"
+              href="#about_id">
+              об аукционе
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__logo">
+        <img
+          src="./images/logo-black.svg"
+          alt="чёрный логотип Оно тебе надо"
+        >
+      </a>
+      <address class="header__contacts">
+        <a class="contacts-link" href="tel:+99995555555"> +9 999 555 5555</a>
+        <a class="contacts-link" href="mailto:info@sobaka.ge"> info@sobaka.ge</a>
+        <a class="contacts-link"> наб. Принсенграхт 263-265,<br> Амстердам</a>
+      </address>
+    </header>
+    <main>
+      <section class="cover">
+        <h1 class="cover__h1">
+          <span class="cover-span">
+            о<span class="cover-span-wider">но</span>
+        </span>
+          <span class="cover-span cover-span-center">
+            те<span class="cover-span-wider">бе</span>
+          </span>
+          <span class="cover-span cover-span-right">
+            <span class="cover-span-wider">н</span>ад<span class="reset_spacing">о</span>
+          </span>
+        </h1>
+        <div class="bid">
+          <blockquote>Аукцион    вещей,    в    которые    никто    не     верил</blockquote>
+          <div class="bid_button">Сделать ставку</div>
+        </div>
+      </section>
+      <section class="lots" id="lots_id">
+        <h2 class="lots__title">Лоты</h2>
+        <ul class="lots__list">
+          <li>
+            <a href="#0">
+              <article class="lots__item">
+                <h3 class="lots__item-title">
+                  Фильм режиссёра, который  бросил киношколу
+                </h3>
+                <p class="lots__item-description">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#0">
+              <article class="lots__item">
+                <h3 class="lots__item-title">
+                  Фильм режиссёра, который  бросил киношколу
+                </h3>
+                <p class="lots__item-description">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#0">
+              <article class="lots__item">
+                <h3 class="lots__item-title">
+                  Фильм режиссёра, который  бросил киношколу
+                </h3>
+                <p class="lots__item-description">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <div class="lots__more">
+          <a href="#0">посмотреть больше</a>
+        </div>
+      </section>
+      <section class="about" id="about_id">
+        <h2 class="about__title">Об аукционе</h2>
+        <div class="about__logo">
+          <div class="about__logo-img">
+            <img src="./images/logo-white.svg" alt="белый логотип оно тебе надо">
+          </div>
+        </div>
+        <div class="about__description">
+          <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+          <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+        </div>
+
+
+      </section>
+    </main>
+    <footer class="footer">
+      <address class="footer__contacts">
+        <a class="contacts-link" href="tel:+99995555555"> +9 999 555 5555</a>
+        <a class="contacts-link" href="mailto:info@sobaka.ge"> info@sobaka.ge</a>
+        <a class="contacts-link"> наб. Принсенграхт 263-265,<br> Амстердам</a>
+      </address>
+      <nav>
+        <ul class="footer__navigation-list">
+          <li class="navigation-item_current">
+            <a class="navigation-link"
+             href="#">
+              главная
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#lots_id">
+              посмотреть лоты
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link"
+              href="#about_id">
+              об аукционе
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <ul class="socials-list">
+          <li class="socials-icon">
+            <a href="#">
+              <img src="./images/yt.svg" alt="иконка Ютьюб">
+            </a>
+          </li>
+          <li class="socials-icon">
+            <a href="#">
+              <img src="./images/vk.svg" alt="иконка ВК">
+            </a>
+          </li>
+          <li class="socials-icon">
+            <a href="#">
+              <img src="./images/pinterest.svg" alt="иконка Пинтерест">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
