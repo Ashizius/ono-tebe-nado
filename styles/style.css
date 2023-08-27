@@ -181,14 +181,27 @@ pixel-perfect*/
 }
 
 .lots__list-item {
-  flex-grow: 1;
-  flex-basis: 430px;
-  min-height: 450px;
-
+  /*flex-grow: 1;
+  flex-basis: 430px;*/
+  height: 450px;
+  width: 430px;
 }
 
-/*фон карточки прокинут в элемент списка,
-    чтобы расширялся по мере расширения страницы относительно базы макета*/
+.card-link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 40px;
+  height: 100%;
+  position: relative;
+}
+
 .card_background_movie {
   background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
@@ -202,28 +215,6 @@ pixel-perfect*/
 .card_background_picture {
   background-image: url(../images/card-lot-03.jpg);
   background-size: cover;
-}
-
-.card-link {
-  display: block;
-  text-decoration: none;
-  height: 100%;
-  position: relative;
-}
-
-/*в карточке жёстко задана её ширина для совпадения
-    с макетом ширины блока с текстом
-    задано выравнивание карточки по центру ссылки,
-    чтобы текст центрировался относительно фона*/
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 50px 40px;
-  height: 100%;
-  width: 430px;
-  margin: 0 auto;
 }
 
 .card-title {
@@ -312,7 +303,6 @@ pixel-perfect*/
   justify-self: start;
   padding-left: 50px;
 }
-
 
 .socials {
   justify-self: end;
