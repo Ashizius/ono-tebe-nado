@@ -1,8 +1,28 @@
 
-.img {
-  width:100%;
-  height:100%;
+/* место для вашего кода */
+/*pixel-perfect
+.pixel-perfect-image {
+  position:absolute;
+  top:0;
+  left: 50%;
+  width: 1440px;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  filter:sepia(0.6);
 }
+
+body{
+  max-width: 1440px;
+}
+pixel-perfect*/
+/*проверка на прокрутку на минимуме.
+.check{
+  width: 1100px;
+  height: 100%;
+  border: 1px solid #000;
+  position:fixed;
+}
+*/
 
 .header {
   display: grid;
@@ -14,24 +34,19 @@
   font-weight: 400;
 }
 
-.header__navigation-list {
+.header__menu-list {
   display: flex;
   flex-direction: row;
-  align-items: center;
   column-gap: 32px;
   padding-left: 51px;
   list-style: circle;
 }
 
-.navigation-item {
-  white-spacing:nowrap;
-}
-
-.navigation-item_current {
+.menu-item_current {
   list-style: none;
 }
 
-.navigation-item_current .navigation-link {
+.menu-item_current .menu-link {
   text-decoration: none;
 }
 
@@ -39,6 +54,11 @@
   display: block;
   width: 136px;
   justify-self: center;
+}
+
+.image {
+  width:100%;
+  height:100%;
 }
 
 .header__contacts {
@@ -67,8 +87,8 @@
 }
 
  .overlay {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   background-color: rgb(0 0 0 / 0.5);
   position:absolute;
   inset: 0;
@@ -78,21 +98,19 @@
 .cover__h1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding-top: 115px;
   padding-bottom: 135px;
   row-gap:20px;
-  white-space: nowrap;
   z-index: 1;
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .cover-span {
   display: block;
-  color: #fff;
-  font-size: 100px;
-  font-weight: 700;
   line-height: 1.15;
-  text-transform: uppercase;
   letter-spacing: 30px;
 }
 
@@ -119,7 +137,6 @@
   display:flex;
   justify-content: end;
   color: #fff;
-  text-align: center;
   align-items: center;
   font-size: 22px;
   text-transform: uppercase;
@@ -133,7 +150,7 @@
   color:inherit;
   font-size: inherit;
   line-height: inherit;
-  font-family: Raleway;
+  font-family: inherit;
   font-style: inherit;
   text-transform: inherit;
   border: 1px solid #fff;
@@ -146,7 +163,7 @@
   padding:180px 50px;
 }
 
-.lots__title {
+.lots__heading {
   padding-bottom: 27px;
   padding-left: 40px;
   font-size: 40px;
@@ -166,38 +183,50 @@
 .lots__list-item {
   flex-grow: 1;
   flex-basis: 430px;
-}
-
-.lots__link {
-  display: block;
-  text-decoration: none;
-}
-
-.lots__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 50px 40px;
-  position: relative;
   min-height: 450px;
+
 }
 
-.lots__item01-background {
+/*фон карточки прокинут в элемент списка,
+    чтобы расширялся по мере расширения страницы относительно базы макета*/
+.card_background_movie {
   background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
 }
 
-.lots__item02-background {
+.card_background_book {
   background-image: url(../images/card-lot-02.jpg);
   background-size: cover;
 }
 
-.lots__item03-background {
+.card_background_picture {
   background-image: url(../images/card-lot-03.jpg);
   background-size: cover;
 }
 
-.lots__item-title {
+.card-link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  position: relative;
+}
+
+/*в карточке жёстко задана её ширина для совпадения
+    с макетом ширины блока с текстом
+    задано выравнивание карточки по центру ссылки,
+    чтобы текст центрировался относительно фона*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 40px;
+  height: 100%;
+  width: 430px;
+  margin: 0 auto;
+}
+
+.card-title {
   color: #fff;
   font-size: 22px;
   font-weight: 700;
@@ -207,14 +236,14 @@
   z-index: 1;
 }
 
-.lots__item-description {
+.card-description {
   color: #fff;
   font-size: 20px;
-  line-height: 1.2; /* 24px */
+  line-height: 1.2;
   z-index: 1;
 }
 
-.lots__more {
+.lots__more-link {
   font-size: 20px;
   padding-top: 30px;
   padding-left: 40px;
@@ -226,45 +255,39 @@
   width:100%;
   gap: 8px 25px;
   grid-template-columns: 430px auto;
+  /*grid-template-columns: 1fr 2fr;*/
   grid-template-rows: 240px auto;
   grid-template-areas:
-  "logo title"
+  "logo heading"
   ". description";
   align-items:center;
 }
 
-.about__title {
-  grid-area: title;
+.about__heading {
+  grid-area: heading;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-
 }
 
 .about__logo {
   grid-area: logo;
   justify-self: center;
-}
-
-.about__logo-img {
   width: 240px;
   height: 240px;
   padding:63px 46px;
   border-radius: 120px;
   background-color: #000;
-
 }
 
 .about__description {
-  display: grid;
   grid-area: description;
+  display: grid;
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
   gap:25px;
 }
-
-
 
 .footer {
   display: grid;
@@ -275,9 +298,8 @@
   padding-top: 180px;
 }
 
-
-.footer__navigation-list {
-  list-style: circle;
+.footer__menu-list {
+  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,7 +318,6 @@
   justify-self: end;
   padding-right: 50px;
 }
-
 
 .socials-list {
   width: 240px;
