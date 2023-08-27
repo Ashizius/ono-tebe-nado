@@ -150,8 +150,8 @@ pixel-perfect*/
   color:inherit;
   font-size: inherit;
   line-height: inherit;
-  font-family: inherit;
-  font-style: Raleway;
+  font-family: Raleway;
+  font-style: inherit;
   text-transform: inherit;
   border: 1px solid #fff;
   min-width:257px;
