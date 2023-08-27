@@ -1,20 +1,7 @@
-/* место для вашего кода */
-/*pixel-perfect*/
-.pixel-perfect-image {
-  position:absolute;
-  top:0;
-  left: 50%;
-  width: 1440px;
-  transform: translateX(-50%);
-  opacity: 0.5;
-  filter:sepia(0.6);
-}
-/*/pixel-perfect*/
-
+/*
 body{
-  /*max-width: 1440px;*/
 }
-
+*/
 .img{
   width:100%;
   height:100%;
