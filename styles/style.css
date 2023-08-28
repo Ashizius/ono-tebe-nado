@@ -140,9 +140,20 @@ pixel-perfect*/
   align-items: center;
   font-size: 22px;
   text-transform: uppercase;
-  white-space: pre;
   column-gap: 78px;
   z-index: 1;
+}
+
+  /* можно было сделать через
+  white-space: pre; и обойтись без нижестоящих двух классов
+  */
+
+.bid_quote {
+  word-spacing: 0.78em;
+}
+
+.bid_quote-wider {
+  word-spacing: 0.96em;
 }
 
 .bid_button {
@@ -181,8 +192,6 @@ pixel-perfect*/
 }
 
 .lots__list-item {
-  /*flex-grow: 1;
-  flex-basis: 430px;*/
   height: 450px;
   width: 430px;
 }
@@ -246,7 +255,6 @@ pixel-perfect*/
   width:100%;
   gap: 8px 25px;
   grid-template-columns: 430px auto;
-  /*grid-template-columns: 1fr 2fr;*/
   grid-template-rows: 240px auto;
   grid-template-areas:
   "logo heading"
@@ -254,6 +262,8 @@ pixel-perfect*/
   align-items:center;
 }
 
+/*в макете не по центру,
+ в задании просят по центру изображения*/
 .about__heading {
   grid-area: heading;
   font-size: 40px;
@@ -276,7 +286,6 @@ pixel-perfect*/
   display: grid;
   font-size: 20px;
   font-weight: 400;
-  line-height: normal;
   gap:25px;
 }
 
@@ -294,7 +303,6 @@ pixel-perfect*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 15;
 }
 
 .footer__contacts {
