@@ -28,17 +28,16 @@ pixel-perfect*/
   display: grid;
   align-items:center;
   grid-template-columns: 2fr 1fr 2fr;
-  height: 293px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  padding: 92px 51px;
 }
 
 .header__menu-list {
   display: flex;
   flex-direction: row;
   column-gap: 32px;
-  padding-left: 51px;
   list-style: circle;
 }
 
@@ -65,7 +64,6 @@ pixel-perfect*/
   line-height: 1.35;
   font-style: normal;
   justify-self: end;
-  padding-right: 51px;
 }
 
 .contacts-link {
@@ -192,7 +190,7 @@ pixel-perfect*/
 }
 
 .lots__list-item {
-  height: 450px;
+  min-height: 450px;
   width: 430px;
 }
 
@@ -244,6 +242,7 @@ pixel-perfect*/
 }
 
 .lots__more-link {
+  display: block;
   font-size: 20px;
   padding-top: 30px;
   padding-left: 40px;
@@ -294,8 +293,7 @@ pixel-perfect*/
   align-items:start;
   grid-template-columns: repeat(3,1fr);
   font-size: 18px;
-  padding-bottom: 90px;
-  padding-top: 180px;
+  padding: 180px 50px 90px;
 }
 
 .footer__menu-list {
@@ -309,15 +307,11 @@ pixel-perfect*/
   line-height: 24.3px;
   font-style: normal;
   justify-self: start;
-  padding-left: 50px;
-}
 
-.socials {
-  justify-self: end;
-  padding-right: 50px;
 }
 
 .socials-list {
+  justify-self: end;
   width: 240px;
   display: flex;
   justify-content: space-between;
